@@ -2,159 +2,346 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework5</title>
+    <meta
+      name="description"
+      content="Effective solutions for business, Digital Marketing"
+    />
+    <title>Homework 7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-         <!--Header-->
-    <header class="header head-shadow">
-        <div class="headercon container">
-       
-         <!--logo-->
-        <nav class="header-logo">
-          <a class="header-logolist link" href="./portfolio.html">Web<span class="inside-logo">Studio</span></a>
-          <!--logo-->
-  
-                 <!--menu/Navigation-->
-                 <ul class="header-list">
-                  <li class="menu-list-item">
-                    <a class="active header-link-style link" href="./index.html">Studio</a>
-                  </li>
-        
-                  <li class="menu-list-item">
-                    <a class="link" href="./portfolio.html">Portfolio</a>
-                  </li>
-        
-                  <li>
-                    <a class="header-link-style link" href="">Contacts</a>
-                  </li>
-                </ul>
-              </nav>
-        
-  
-              
-          <!--Contacts-->
-          <address class="header-contacts-style">
-          <ul class="header-list">
-              <li class="contacts">
-                <a class="header-contacts-color link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+  <body>
+
+    <header class="header">
+      <div class="container header-container">
+
+        <nav class="header-navigation">
+          <a class="header-logo link" href="./index.html">
+            Web<span class="textlogo">Studio</span>
+          </a>
+
+          <ul class="header-menu-list list">
+
+            <li>
+              <a href="./index.html" class="header-menu-link link menu-active"
+                >Studio</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="./portfolio.html"
+                class="header-menu-link link underline-animation"
+                >Portfolio</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="header-menu-link link underline-animation"
+                >Contacts</a
+              >
+            </li>
+
+          </ul>
+        </nav>
+
+        <address class="header-address">
           
-          <!--menu/Navigation-->
-  
-          
-             <li class="contacts"> 
-              <a class="header-contacts-color link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <ul class="header-address-list list">
+            <li class="header-address-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-address-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >info@devstudio.com</a
+              >
+            </li>
+
+            <li class="header-address-item">
+              <a
+                href="tel:+110001111111"
+                class="header-address-link link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >+11 (000) 111-11-11</a
+              >
+
+            </li>
+          </ul>
+        </address>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#hamburger-open"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="hamburger-close-button js-close-menu">
+            <svg class="menu-icon" width="12" height="12">
+              <use href="./images/icons.svg#hamburger-close"></use>
+            </svg>
+          </button>
+          <ul class="hamburger-menu-list list">
+            <li>
+              <a
+                href="./index.html"
+                class="hamburger-menu-link link menu-active"
+                >Studio</a
+              >
+            </li>
+
+            <li>
+              <a href="./portfolio.html" class="hamburger-menu-link link"
+                >Portfolio</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="hamburger-menu-link link">Contacts</a>
+            </li>
+
+          </ul>
+          <div class="hamburger-wrapper">
+            <address class="hamburger-address">
+              <ul class="hamburger-address-list list">
+                <li class="hamburger-address-item">
+                  <a
+                    href="tel:+110001111111"
+                    class="hamburger-address-link highlight link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="hamburger-address-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="hamburger-address-link link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="hamburger-social-list list">
+              <li class="hamburger-social-item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hamburger-social-link link"
+                  ><svg class="hamburger-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use></svg
+                ></a>
+              </li>
+              <li class="hamburger-social-item">
+                <a
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hamburger-social-link link"
+                  ><svg class="hamburger-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use></svg
+                ></a>
+              </li>
+              <li class="hamburger-social-item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hamburger-social-link link"
+                  ><svg class="hamburger-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="hamburger-social-item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hamburger-social-link link"
+                  ><svg class="hamburger-social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-          </address>
-          <!--Conntact-->
+          </div>
         </div>
-      </header>
-  
-        
+      </div>
+    </header>
 
-<main>
-    <!--Hero Section-->
+    <main>
+    <!-- header -->
 
-    <!-- Section 1-->
-    <section class="first-section">
-        <div class="container hero-container">
-                    <h1 class="section-title">Effective Solutions <br/> for Your Business </h1>
-                    <button class="button" type="button" data-modal-open="modal-window">Order Service. </button>
-        </div>
-    </section>
-     <!-- Section 1-->
+  <main>
+      <!--Hero Section-->
+
+<!-- Section 1-->
+  <section class="first-section"> <!--hw2-->
+    <div class="container firstcon">
+        <h1 class="first-title"> Effective Solutions </br> for Your Business </h1>
+        <button class="button" type="hero-button" data-modal-open> Order Service </button> <!--hw2-->
+    </div>
+  </section>
+<!-- Section 1-->
 
     <!-- Section 2-->
-    <section class="second-section">
-        <div class="container">
-            <h2 class="visually-hidden">Section 2 title</h2>
-        <ul class="listarea">
-                    <li class="list-items">
-                      <div class="list-svg">
-                        <svg width="64" height="64">
-                          <use href="./images/icons.svg#antenna"></use>
-                        </svg>
-                      </div>
-                    <h3 class="section-two-headers"> Strategy </h3>
-                        <p class="section-two-paragraphs"> Our goal is to identify the business problem to walk away with the
-                          perfect and creative solution.</p>
-                    </li>
-            
-                    <li class="list-items">
-                      <div class="list-svg">
-                        <svg width="64" height="64">
-                          <use href="./images/icons.svg#clock"></use>
-                        </svg>
-                      </div>
-                    <h3 class="section-two-headers"> Punctuality </h3>
-                        <p class="section-two-paragraphs"> Bring the key message to the brand's audience for the best price
-                          within the shortest possible time. </p>
-                    </li>
-            
-                    <li class="list-items">
-                      <div class="list-svg">
-                        <svg width="64" height="64">
-                          <use href="./images/icons.svg#diagram"></use>
-                        </svg>
-                      </div>                    
-                    <h3 class="section-two-headers"> Diligence </h3>
-                        <p class="section-two-paragraphs"> Research and confirm brands that present the strongest digital
-                          growth opportunities and minimize risk. </p>
-                        </li>
+    <!-- hw7 -->
+    <section class="section">
+      <div class="container">
 
-                    <li class="list-items">    
-                      <div class="list-svg">
-                        <svg width="64" height="64">
-                          <use href="./images/icons.svg#astranaut"></use>
+          <ul class="secondarea list">  <!--hw3-->
+
+                <li class="list-item"> 
+                  
+                  <!--hw3-->
+                    <div class="second-icon-container"> <!--hw7-->
+                        <svg class="second-icons" width="64"    
+                          height="64"> <!--hw4-->
+                        <use href="./images/icons.svg#antenna"></use> <!--hw4-->
                         </svg>
-                      </div>                
-                    <h3 class="section-two-headers"> Technologies </h3>
-                        <p class="section-two-paragraphs"> Design practice focused on digital experiences. We bring forth a 
-                            deep passion for problem-solving. </p>
-                        </li>
-        </ul>
-        </div>
-    </section>
-    <!-- Section 2-->
+                    </div>
+
+                    <h3 class="section-two-headers"> Strategy </h3> <!--hw2-->
+                    <p class="section-text- paragraphs"> Our goal is to identify the business problem to walk away with the
+                          perfect and creative solution.</p> <!--hw2-->
+                </li>
+            
+                <li class="list-item"> <!--hw3-->
+
+                    <div class="second-icon-container"> <!--hw7-->
+                      <svg class="second-icons" width="64"    
+                        height="64"> <!--hw4-->
+                      <use href="./images/icons.svg#clock"></use> <!--hw4-->
+                      </svg>
+                    </div>
+
+                        <h3 class="section-two-headers"> Punctuality </h3> <!--hw2-->
+                            <p class="section-text-paragraphs"> Bring the key message to the brand's audience for the best price
+                            within the shortest possible time. </p> <!--hw2-->
+                </li>
+
+                <li class="list-item"> <!--hw3-->
+
+                    <div class="second-icon-container"> <!--hw7-->
+                      <svg class="second-icons" width="64"    
+                        height="64"> <!--hw4-->
+                      <use href="./images/icons.svg#diagram"></use> <!--hw4-->
+                      </svg>
+                    </div>
+
+                        <h3 class="section-two-headers"> Diligence </h3> <!--hw2-->
+                            <p class="section-text-paragraphs"> Research and confirm brands that present the strongest digital
+                            growth opportunities and minimize risk. </p> <!--hw2-->
+                </li>
+                
+                <li class="list-item"> <!--hw3-->
+
+                    <div class="second-icon-container"> <!--hw7-->
+                      <svg class="second-icons" width="64"    
+                        height="64"> <!--hw4-->
+                      <use href="./images/icons.svg#astronaut"></use> <!--hw4-->
+                      </svg>
+                    </div>
+
+                        <h3 class="section-two-headers"> Technologies </h3> <!--hw2-->
+                            <p class="section-text-paragraphs"> Design practice focused on digital experiences. We bring forth a 
+                            deep passion for problem-solving. </p> <!--hw2-->
+                </li>
+          </ul>
+      </div>
+  </section>
+  <!-- Section 2-->
 
     <!-- Section 3-->
-    <section class="third-section">
+    <section class="section third-section">
+
         <div class="container">
-            <h2 class="third-headers">What are we doing</h2> 
-                <ul class="listarea">
+
+            <h2 class="section-title">What are we doing</h2> 
+
+              <ul class="image-list list">
         
-                    <li class="third-headers-item"><img src="./images/img1.jpg"  alt = "monitor" width = "360" height = "360"/></li>
-                    <li class="third-headers-item"><img src="./images/img2.jpg"  alt = "monitor" width = "360" height = "360"/></li>
-                    <li class="third-headers-item"><img src="./images/img3.jpg"  alt = "Monitor and Cellphone" width = "360" height = "360"/></li>
-                </ul>
+                    <li 
+                      class="third-headers-item">
+                      <img src="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"  
+                      alt = "monitor" 
+                      width = "360" 
+                      height = "360"/>
+                    </li>
+
+                    <li 
+                      class="third-headers-item">
+                      <img src="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"  
+                      alt = "cellphone" 
+                      width = "360" 
+                      height = "360"/>
+                    </li>
+
+                    <li 
+                      class="third-headers-item">
+                      <img src="./images/img3.jpg 1x, ./images/img3s@2x.jpg 2x"  
+                      alt = "Monitor and Cellphone" 
+                      width = "360" 
+                      height = "360"/>
+                    </li>
+              </ul>
         </div>
     </section>
     <!-- Section 3-->
 
     <!-- Section 4-->
-    <section class="fourth-section">
+    <section class="fourth-section section">
+      
         <div class="container">
-            <h2 class="fourth-section-header"> Our Team </h2>
-                <ul class="listarea">
+
+            <h2 class="section-title"> Our Team </h2>
+
+                <ul class="listarea list">
 
                     <li class="employees-color">
-                        <img src="./images/img4.jpg" alt="Mark Guerrero" width = "264" height = "264" class="display"/> 
+
+                        <img srcset="./images/img4.jpg 1x
+                                     ./images/img4@2x.jpg 2x" 
+                              src="./images/img4.jpg"
+                              alt="Mark Guerrero" 
+                              width = "264"  
+                              class="display"/> 
+
                       <div class="fourth-section-items">
-                        <h3 class="employees-name employees-header"> Mark Guerrero </h3>
+                        <h3 class="employees-name"> Mark Guerrero </h3>
                         <p class="employees-position"> Product Designer </p>
 
-                        <ul class="social-network">
+                        <ul class="social-network-list list">
                           <li class="socmed">
-                            <a href="" class="socmed-link">
-                              <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                            <a href="https://www.instagram.com/"
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="socmed-link link">
+                              <svg class="socmed-svg-icon" 
+                                   width="16" 
+                                   height="16"
+                                   xmlns="http://www.w3.org/2000/svg">
                                 <use href="./images/icons.svg#instagram"></use>
                               </svg>
                             </a>
@@ -162,8 +349,14 @@
 
                           
                             <li class="socmed">
-                              <a href="" class="socmed-link">
-                                <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                              <a href="https://www.twitter.com/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  class="socmed-link link">
+                                <svg class="socmed-svg-icon" 
+                                     width="16" 
+                                     height="16" 
+                                     xmlns="http://www.w3.org/2000/svg">
                                   <use href="./images/icons.svg#twitter"></use>
                                 </svg>
                               </a>
@@ -171,8 +364,14 @@
 
                     
                               <li class="socmed">
-                                <a href="" class="socmed-link">
-                                  <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <a href="https://www.facebook.com/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="socmed-link link">
+                               <svg class="socmed-svg-icon"  
+                                       width="16" 
+                                       height="16" 
+                                       xmlns="http://www.w3.org/2000/svg">
                                     <use href="./images/icons.svg#facebook"></use>
                                   </svg>
                                 </a>
@@ -180,8 +379,14 @@
 
                               
                                 <li class="socmed">
-                                  <a href="" class="socmed-link">
-                                    <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                  <a href="https://www.linkendin.com/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  class="socmed-link link">
+                                 <svg class="socmed-svg-icon" 
+                                         width="16" 
+                                         height="16" 
+                                         xmlns="http://www.w3.org/2000/svg">
                                       <use href="./images/icons.svg#linkedin"></use>
                                     </svg>
                                   </a>
@@ -196,37 +401,61 @@
                             <h3 class="employees-name employees-header"> Tom Ford  </h3>
                             <p class="employees-position"> Frontend Developer </p>
                             
-                            <ul class="social-network">
+                            <ul class="social-network-list list">
                               <li class="socmed">
-                                <a href="" class="socmed-link">
-                                  <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <a href="https://www.instagram.com/"
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="socmed-link link">
+                                  <svg class="socmed-svg-icon" 
+                                       width="16" 
+                                       height="16"
+                                       xmlns="http://www.w3.org/2000/svg">
                                     <use href="./images/icons.svg#instagram"></use>
                                   </svg>
                                 </a>
                               </li>
-
+    
                               
                                 <li class="socmed">
-                                  <a href="" class="socmed-link">
-                                    <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                  <a href="https://www.twitter.com/" 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      class="socmed-link link">
+                                    <svg class="socmed-svg-icon" 
+                                         width="16" 
+                                         height="16" 
+                                         xmlns="http://www.w3.org/2000/svg">
                                       <use href="./images/icons.svg#twitter"></use>
                                     </svg>
                                   </a>
                                 </li>
-
+    
                         
                                   <li class="socmed">
-                                    <a href="" class="socmed-link">
-                                      <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="https://www.facebook.com/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="socmed-link link">
+                                   <svg class="socmed-svg-icon"  
+                                           width="16" 
+                                           height="16" 
+                                           xmlns="http://www.w3.org/2000/svg">
                                         <use href="./images/icons.svg#facebook"></use>
                                       </svg>
                                     </a>
                                   </li>
-
+    
                                   
                                     <li class="socmed">
-                                      <a href="" class="socmed-link">
-                                        <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                      <a href="https://www.linkendin.com/" 
+                                      target="_blank" 
+                                      rel="noopener noreferrer"
+                                      class="socmed-link link">
+                                     <svg class="socmed-svg-icon" 
+                                             width="16" 
+                                             height="16" 
+                                             xmlns="http://www.w3.org/2000/svg">
                                           <use href="./images/icons.svg#linkedin"></use>
                                         </svg>
                                       </a>
@@ -241,10 +470,16 @@
                         <h3 class="employees-name employees-header"> Camila Garcia </h3>
                         <p class="employees-position"> Marketing </p>
                         
-                        <ul class="social-network">
+                        <ul class="social-network-list list">
                           <li class="socmed">
-                            <a href="" class="socmed-link">
-                              <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                            <a href="https://www.instagram.com/"
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="socmed-link link">
+                              <svg class="socmed-svg-icon" 
+                                   width="16" 
+                                   height="16"
+                                   xmlns="http://www.w3.org/2000/svg">
                                 <use href="./images/icons.svg#instagram"></use>
                               </svg>
                             </a>
@@ -252,8 +487,14 @@
 
                           
                             <li class="socmed">
-                              <a href="" class="socmed-link">
-                                <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                              <a href="https://www.twitter.com/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  class="socmed-link link">
+                                <svg class="socmed-svg-icon" 
+                                     width="16" 
+                                     height="16" 
+                                     xmlns="http://www.w3.org/2000/svg">
                                   <use href="./images/icons.svg#twitter"></use>
                                 </svg>
                               </a>
@@ -261,8 +502,14 @@
 
                     
                               <li class="socmed">
-                                <a href="" class="socmed-link">
-                                  <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <a href="https://www.facebook.com/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="socmed-link link">
+                               <svg class="socmed-svg-icon"  
+                                       width="16" 
+                                       height="16" 
+                                       xmlns="http://www.w3.org/2000/svg">
                                     <use href="./images/icons.svg#facebook"></use>
                                   </svg>
                                 </a>
@@ -270,8 +517,14 @@
 
                               
                                 <li class="socmed">
-                                  <a href="" class="socmed-link">
-                                    <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                  <a href="https://www.linkendin.com/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  class="socmed-link link">
+                                 <svg class="socmed-svg-icon" 
+                                         width="16" 
+                                         height="16" 
+                                         xmlns="http://www.w3.org/2000/svg">
                                       <use href="./images/icons.svg#linkedin"></use>
                                     </svg>
                                   </a>
@@ -287,10 +540,16 @@
                         <h3 class="employees-name employees-header"> Daniel Wilson </h3>
                         <p class="employees-position"> UI Designer </p>
 
-                        <ul class="social-network">
+                        <ul class="social-network-list list">
                           <li class="socmed">
-                            <a href="" class="socmed-link">
-                              <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                            <a href="https://www.instagram.com/"
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="socmed-link link">
+                              <svg class="socmed-svg-icon" 
+                                   width="16" 
+                                   height="16"
+                                   xmlns="http://www.w3.org/2000/svg">
                                 <use href="./images/icons.svg#instagram"></use>
                               </svg>
                             </a>
@@ -298,8 +557,14 @@
 
                           
                             <li class="socmed">
-                              <a href="" class="socmed-link">
-                                <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                              <a href="https://www.twitter.com/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  class="socmed-link link">
+                                <svg class="socmed-svg-icon" 
+                                     width="16" 
+                                     height="16" 
+                                     xmlns="http://www.w3.org/2000/svg">
                                   <use href="./images/icons.svg#twitter"></use>
                                 </svg>
                               </a>
@@ -307,8 +572,14 @@
 
                     
                               <li class="socmed">
-                                <a href="" class="socmed-link">
-                                  <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <a href="https://www.facebook.com/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="socmed-link link">
+                               <svg class="socmed-svg-icon"  
+                                       width="16" 
+                                       height="16" 
+                                       xmlns="http://www.w3.org/2000/svg">
                                     <use href="./images/icons.svg#facebook"></use>
                                   </svg>
                                 </a>
@@ -316,8 +587,14 @@
 
                               
                                 <li class="socmed">
-                                  <a href="" class="socmed-link">
-                                    <svg class="socmed-svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                  <a href="https://www.linkendin.com/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  class="socmed-link link">
+                                 <svg class="socmed-svg-icon" 
+                                         width="16" 
+                                         height="16" 
+                                         xmlns="http://www.w3.org/2000/svg">
                                       <use href="./images/icons.svg#linkedin"></use>
                                     </svg>
                                   </a>
@@ -333,54 +610,63 @@
     <!-- Section 4-->
 
     <!-- Section 5 -->
-    <section class="customers">
+    <section class="section">
       <div class="container">
-        <h2 class="customers-header">Customers</h2>
-        <ul class="customers-list">
+        <h2 class="section-title"> Customers </h2>
+        <ul class="customers-list list">
 
           <li class="customers-list-item">
-            <a href="" class="customers-list-link">
-              <svg class="customers-svg" width="104" height="56" xmlns="http://www.w3.org/2000/svg">
+            <a href="" class="customers-link link">
+              <svg class="customers-icon" 
+                    width="104" 
+                    height="56">
                 <use href="./images/icons.svg#client-1"></use>
               </svg>
             </a>
           </li>
 
           <li class="customers-list-item">
-            <a href="" class="customers-list-link">
-              <svg class="customers-svg" width="104" height="56" xmlns="http://www.w3.org/2000/svg">
+            <a href="" class="customers-link link">
+              <svg class="customers-icon" 
+                    width="104" 
+                    height="56">
                 <use href="./images/icons.svg#client-2"></use>
               </svg>
             </a>
           </li>
-
           <li class="customers-list-item">
-            <a href="" class="customers-list-link">
-              <svg class="customers-svg" width="104" height="56" xmlns="http://www.w3.org/2000/svg">
+            <a href="" class="customers-link link">
+              <svg class="customers-icon" 
+                    width="104" 
+                    height="56">
                 <use href="./images/icons.svg#client-3"></use>
               </svg>
             </a>
           </li>
 
           <li class="customers-list-item">
-            <a href="" class="customers-list-link">
-              <svg class="customers-svg" width="104" height="56" xmlns="http://www.w3.org/2000/svg">
+            <a href="" class="customers-link link">
+              <svg class="customers-icon" 
+                    width="104" 
+                    height="56">
                 <use href="./images/icons.svg#client-4"></use>
               </svg>
             </a>
           </li>
-
           <li class="customers-list-item">
-            <a href="" class="customers-list-link">
-              <svg class="customers-svg" width="104" height="56" xmlns="http://www.w3.org/2000/svg">
+            <a href="" class="customers-link link">
+              <svg class="customers-icon" 
+                    width="104" 
+                    height="56">
                 <use href="./images/icons.svg#client-5"></use>
               </svg>
             </a>
           </li>
-
           <li class="customers-list-item">
-            <a href="" class="customers-list-link">
-              <svg class="customers-svg" width="104" height="56" xmlns="http://www.w3.org/2000/svg">
+            <a href="" class="customers-link link">
+              <svg class="customers-icon" 
+                    width="104" 
+                    height="56">
                 <use href="./images/icons.svg#client-6"></use>
               </svg>
             </a>
